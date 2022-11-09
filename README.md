@@ -13,15 +13,17 @@ Install conda
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
-
 ```
    
 Create a dedicated conda environment and activate
 
 ```
 conda env create -f environment.yml
-conda activate chemwalker 
-pip install git+https://github.com/computational-chemical-biology/ChemWalker.git
+conda activate chemwalker
+```
+Install
+```
+pip install -e "git+https://github.com/tiagocabralborelli/ChemWalker.git#egg=chemwalker"
 ```
 
 ## Third party
